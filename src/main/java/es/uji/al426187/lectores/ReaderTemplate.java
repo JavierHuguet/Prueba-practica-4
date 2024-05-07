@@ -17,19 +17,19 @@ public abstract class ReaderTemplate {
         this.fichero = fichero;
         this.tabla = tableCreator();
     }
-    public abstract Table tableCreator();
+    abstract Table tableCreator();
 
-    public abstract void openSource(String source) throws IOException;
+    abstract void openSource(String source) throws IOException;
 
-    public abstract void processHeaders(String headers);
+    abstract void processHeaders(String headers);
 
-    public abstract void processData(String data);
+    abstract void processData(String data);
 
-    public abstract void closeSource() throws IOException;
+    abstract void closeSource() throws IOException;
 
-    public abstract boolean hasMoreData() throws IOException;
+    abstract boolean hasMoreData() throws IOException;
 
-    public abstract String getNextData() throws IOException;
+    abstract String getNextData() throws IOException;
 
     public final Table readTableFromSource() throws IOException{
         openSource(fichero);

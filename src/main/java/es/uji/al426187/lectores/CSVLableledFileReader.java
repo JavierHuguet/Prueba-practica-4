@@ -15,7 +15,7 @@ public class CSVLableledFileReader extends CSVUnlabeledFileReader{
 
     }
     @Override
-    public Table tableCreator(){ return new TableWithLabels();    }
+    public Table tableCreator(){ return new TableWithLabels(); }
 
 
     @Override

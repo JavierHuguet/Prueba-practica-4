@@ -20,4 +20,6 @@ public class TableWithLabels extends Table {
         RowWithLabel newRow = new RowWithLabel(datos, nf);
         rows.add(newRow);
     }
+
+
 }
