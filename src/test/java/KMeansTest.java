@@ -3,8 +3,8 @@
 import es.uji.al426187.distancias.EuclideanDistance;
 
 import es.uji.al426187.estructuras.Table;
-import es.uji.al426187.machineLearning.KMeans;
-import es.uji.al426187.machineLearning.KMeansException;
+import es.uji.al426187.machinelearning.KMeans;
+import es.uji.al426187.machinelearning.KMeansException;
 import org.testng.annotations.Test;
 import org.junit.jupiter.api.BeforeAll;
 

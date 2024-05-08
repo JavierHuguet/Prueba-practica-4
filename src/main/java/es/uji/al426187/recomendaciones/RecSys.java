@@ -1,8 +1,8 @@
 package es.uji.al426187.recomendaciones;
 
 import es.uji.al426187.estructuras.Table;
-import es.uji.al426187.machineLearning.Algorithm;
-import es.uji.al426187.machineLearning.KMeansException;
+import es.uji.al426187.machinelearning.Algorithm;
+import es.uji.al426187.machinelearning.KMeansException;
 
 import java.util.ArrayList;
 import java.util.List;

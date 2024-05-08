@@ -1,4 +1,4 @@
-package es.uji.al426187.machineLearning;
+package es.uji.al426187.machinelearning;
 
 public class KMeansException extends IllegalArgumentException{
     public KMeansException(String mensaje){

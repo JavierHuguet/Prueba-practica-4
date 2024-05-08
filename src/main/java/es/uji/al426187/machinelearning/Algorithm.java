@@ -1,4 +1,4 @@
-package es.uji.al426187.machineLearning;
+package es.uji.al426187.machinelearning;
 
 import es.uji.al426187.estructuras.Table;
 public interface Algorithm < T extends Table,E,V >{

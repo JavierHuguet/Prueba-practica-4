@@ -4,7 +4,7 @@
 import es.uji.al426187.distancias.EuclideanDistance;
 import es.uji.al426187.estructuras.TableWithLabels;
 import es.uji.al426187.lectores.CSV;
-import es.uji.al426187.machineLearning.KNN;
+import es.uji.al426187.machinelearning.KNN;
 import org.junit.jupiter.api.*;
 
 import java.io.IOException;

@@ -9,7 +9,7 @@
 //
 // - En resumen: las pruebas no ejecutan (menos kMeans, pero estas pruebas no comprueban el algoritmo bien), hay un problema de rendimiento, y varios otros errores.
 
-package es.uji.al426187.machineLearning;
+package es.uji.al426187.machinelearning;
 
 import es.uji.al426187.distancias.Distance;
 import es.uji.al426187.estructuras.Row;

@@ -1,4 +1,4 @@
-package es.uji.al426187.machineLearning;
+package es.uji.al426187.machinelearning;
 
 import es.uji.al426187.distancias.Distance;
 import es.uji.al426187.estructuras.TableWithLabels;
