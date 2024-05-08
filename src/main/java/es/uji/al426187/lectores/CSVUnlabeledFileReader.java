@@ -52,4 +52,5 @@ public class CSVUnlabeledFileReader extends ReaderTemplate{
     @Override
     public boolean hasMoreData() throws IOException {
         return sc.hasNext();
+    }
 }

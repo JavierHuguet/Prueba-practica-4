@@ -66,6 +66,9 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>> {
 
         for (int i = 0; i < numClusters; i++) {
             int j = rand.nextInt(datos.getNumRows());
+            while(prototipos.contains(datos.getRowAt(j))){
+                j = rand.nextInt(datos.getNumRows());
+            }
             prototipos.add(datos.getRowAt(j));
         }
 
@@ -122,24 +125,12 @@ public class KMeans implements Algorithm<Table, Integer, List<Double>> {
 
     private List<Integer> asignarGrupos(Table datos) {
         List<Integer> asignaciones = new ArrayList<>();
-        double d;
-        int asignacionesnum = 0;
 
         for (int i = 0; i < datos.getNumRows(); i++) {
 
-            double dMin = Double.POSITIVE_INFINITY;
-            Row dato_actual = datos.getRowAt(i);
+            List<Double> dato_actual = datos.getRowAt(i).getData();
 
-            for (int j = 0; j < prototipos.size(); j++) {
-
-                d = distance.calculateDistance(dato_actual.getData(), prototipos.get(j).getData());
-                if (d < dMin) {
-                    asignacionesnum = j;
-                    dMin = d;
-
-                }
-            }
-            asignaciones.add(asignacionesnum);
+            asignaciones.add(asignarGrupo(dato_actual));
         }
         return asignaciones;
     }
